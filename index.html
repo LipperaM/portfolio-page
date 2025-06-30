@@ -5,19 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="icon" href="assets/icons/github/github-mark.png" type="image/png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+
 </head>
 
 <body class="bg-dark">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-
     <div class="container">
+        <div class="d-flex justify-content-between align-items-center flex-wrap mt-3 gap-1">
+            <div class="d-flex justify-content-between align-items-center flex-wrap mt-3 gap-1">
+                <button onclick="setLanguage('en')" class=" btn btn-sm btn-secondary">EN</button>
+                <button onclick="setLanguage('es')" class=" btn btn-sm btn-secondary">ES</button>
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center flex-wrap mt-3">
+                <a href="https://github.com/LipperaM" target="_blank" class="btn btn-dark">
+                    <i class="bi bi-github"></i> /LipperaM
+                </a>
+
+                <a href="https://www.linkedin.com/in/martin-lippera/" target="_blank" class="btn btn-dark">
+                    <i class="bi bi-linkedin"></i> /Martin-Lippera
+                </a>
+            </div>
+        </div>
+
+        <div class="row">
+            <h1 id="greetings" class="text-light d-flex justify-content-center mt-5 p-6">...</h1>
+        </div>
+
         <!-- Title -->
         <div class="row">
-            <h1 class="text-light d-flex justify-content-center p-6">Welcome to my portfolio!</h1>
+            <h1 id="main-title" class="text-light d-flex justify-content-center mt-5 p-6">Welcome to my portfolio!</h1>
         </div>
 
         <!-- Subtitle -->
@@ -30,8 +50,7 @@
             <!-- First column: Card content-->
             <div class="col-md-6">
                 <div class="card m-1" style="width: 98%;">
-                    <img src="assets/booqs-logo.png"
-                        class="card-img-top" alt="asd">
+                    <img src="assets/img/booqs-logo.png" class="card-img-top" alt="asd">
                     <div class="card-body">
                         <h5 class="card-title">booqs <span class="badge text-bg-success">CLI</span>
                         </h5>
@@ -63,8 +82,9 @@
                 </div>
             </div>
         </div>
-
     </div>
+
+    <script src="js/main.js"></script>
 </body>
 
 </html>
